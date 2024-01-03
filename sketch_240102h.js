@@ -51,7 +51,7 @@ function setup() {
     "_blank"
   );
   linked.style("align", "right");
-  linked.position(windowWidth - 207, 50);
+  linked.position(800, 50);
   linked.style("font-family", "Arial");
   linked.style("font-size", "13px");
   linked.style("color", oldColor);
