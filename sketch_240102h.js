@@ -27,7 +27,7 @@ function setup() {
     "_blank"
   );
   instagram.style("align", "right");
-  instagram.position(windowWidth - 100, 50,fixed);
+  instagram.position(windowWidth - 100, 50);
   instagram.style("font-family", "Arial");
   instagram.style("font-size", "13px");
   instagram.style("color", oldColor);
@@ -76,10 +76,19 @@ function setup() {
 }
 
 function draw() {
+  createCanvas(windowWidth, windowHeight);
+  
   background(249, 246, 238);
   noFill();
   stroke(0, 0, 0);
   bezier(120, 200, 10, 10, 90, 90, windowWidth - 100, windowHeight - 200);
+
+  var xwidth = window.innerWidth;
+  var y = window.innerHeight;
+
+  if (window.innerWidth < 600) {
+    xwidth = 1200 - window.innerWidth;
+  }
 }
 
 function aboutOver() {
