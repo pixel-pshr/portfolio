@@ -27,7 +27,7 @@ function setup() {
     "_blank"
   );
   instagram.style("align", "right");
-  instagram.position(windowWidth - 100, 50);
+  instagram.position(windowWidth - 100, 50,fixed);
   instagram.style("font-family", "Arial");
   instagram.style("font-size", "13px");
   instagram.style("color", oldColor);
