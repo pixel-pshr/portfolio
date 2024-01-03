@@ -1,6 +1,7 @@
 let newColor;
 let oldColor;
 let bg;
+let canvas;
 function setup() {
   // Set the canvas' width and height
   // using the browser's dimensions.
@@ -51,7 +52,7 @@ function setup() {
     "_blank"
   );
   linked.style("align", "right");
-  linked.position(800, 50);
+  linked.position(windowWidth-207, 50);
   linked.style("font-family", "Arial");
   linked.style("font-size", "13px");
   linked.style("color", oldColor);
@@ -76,19 +77,10 @@ function setup() {
 }
 
 function draw() {
-  createCanvas(windowWidth, windowHeight);
-  
   background(249, 246, 238);
   noFill();
   stroke(0, 0, 0);
   bezier(120, 200, 10, 10, 90, 90, windowWidth - 100, windowHeight - 200);
-
-  var xwidth = window.innerWidth;
-  var y = window.innerHeight;
-
-  if (window.innerWidth < 600) {
-    xwidth = 1200 - window.innerWidth;
-  }
 }
 
 function aboutOver() {
@@ -127,3 +119,7 @@ function instaOut() {
 function spheresOut() {
   spheres.style("color", oldColor);
 }
+
+function windowResized() {
+            resizeCanvas(windowWidth, windowHeight);
+        }
