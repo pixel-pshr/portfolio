@@ -16,7 +16,7 @@ function setup() {
   about = createA("https://www.instagram.com/pixel.pshr/", "about", "_blank");
   about.position(50, 50);
   about.style("font-family", "Arial");
-  about.style("font-size", "13px");
+  about.style("font-size", "0.8125em");
   about.style("color", oldColor);
 
   about.mouseOver(aboutOver);
@@ -30,7 +30,7 @@ function setup() {
   instagram.style("align", "right");
   instagram.position(windowWidth - 100, 50);
   instagram.style("font-family", "Arial");
-  instagram.style("font-size", "13px");
+  instagram.style("font-size", "0.8125em");
   instagram.style("color", oldColor);
 
   instagram.mouseOver(instaOver);
@@ -40,7 +40,7 @@ function setup() {
   arena.style("align", "right");
   arena.position(windowWidth - 150, 50);
   arena.style("font-family", "Arial");
-  arena.style("font-size", "13px");
+  arena.style("font-size", "0.8125em");
   arena.style("color", oldColor);
 
   arena.mouseOver(arenaOver);
@@ -54,7 +54,7 @@ function setup() {
   linked.style("align", "right");
   linked.position(windowWidth-207, 50);
   linked.style("font-family", "Arial");
-  linked.style("font-size", "13px");
+  linked.style("font-size", "0.8125em");
   linked.style("color", oldColor);
 
   linked.mouseOver(linkedOver);
@@ -68,7 +68,7 @@ function setup() {
   
   spheres.position(120,200);
   spheres.style("font-family", "Arial");
-  spheres.style("font-size", "13px");
+  spheres.style("font-size", "0.8125em");
   spheres.style("color", oldColor);
   spheres.style("background-color", bg);
 
